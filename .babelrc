@@ -1,8 +1,9 @@
 {
-  "plugins": ["transform-runtime"],
+  "plugins": [
+    "transform-object-rest-spread",
+  ],
   "presets": [
     "react",
-    "stage-3",
     [
       "env",
       {
