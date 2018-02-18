@@ -1,5 +1,5 @@
-import ExtractTextPlugin from 'extract-text-webpack-plugin'
-import path from 'path'
+const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const path = require('path')
 
 module.exports = [{
   context: path.join(__dirname, 'src'),
@@ -15,6 +15,9 @@ module.exports = [{
     rules: [
       {
         test: /\.js$/,
+        use: {
+          loader: 'babel-loader',
+        },
       },
     ],
   },
