@@ -65,9 +65,10 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-throw new Error("Module build failed: SyntaxError: /Users/nick-auxdrive/Code/tapas/.babelrc: Error while parsing JSON - Unexpected EOF at line 1 column 2 of the JSON5 data. Still to read: \"\"\n    at error (/Users/nick-auxdrive/Code/tapas/node_modules/json5/lib/json5.js:56:25)\n    at word (/Users/nick-auxdrive/Code/tapas/node_modules/json5/lib/json5.js:393:13)\n    at value (/Users/nick-auxdrive/Code/tapas/node_modules/json5/lib/json5.js:493:56)\n    at Object.parse (/Users/nick-auxdrive/Code/tapas/node_modules/json5/lib/json5.js:508:18)\n    at ConfigChainBuilder.addConfig (/Users/nick-auxdrive/Code/tapas/node_modules/babel-core/lib/transformation/file/options/build-config-chain.js:150:65)\n    at ConfigChainBuilder.findConfigs (/Users/nick-auxdrive/Code/tapas/node_modules/babel-core/lib/transformation/file/options/build-config-chain.js:96:16)\n    at buildConfigChain (/Users/nick-auxdrive/Code/tapas/node_modules/babel-core/lib/transformation/file/options/build-config-chain.js:61:13)\n    at OptionManager.init (/Users/nick-auxdrive/Code/tapas/node_modules/babel-core/lib/transformation/file/options/option-manager.js:354:58)\n    at File.initOptions (/Users/nick-auxdrive/Code/tapas/node_modules/babel-core/lib/transformation/file/index.js:212:65)\n    at new File (/Users/nick-auxdrive/Code/tapas/node_modules/babel-core/lib/transformation/file/index.js:135:24)\n    at Pipeline.transform (/Users/nick-auxdrive/Code/tapas/node_modules/babel-core/lib/transformation/pipeline.js:46:16)\n    at transpile (/Users/nick-auxdrive/Code/tapas/node_modules/babel-loader/lib/index.js:50:20)\n    at Object.module.exports (/Users/nick-auxdrive/Code/tapas/node_modules/babel-loader/lib/index.js:175:20)");
+"use strict";
+
 
 /***/ })
 /******/ ]);
