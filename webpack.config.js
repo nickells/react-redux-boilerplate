@@ -15,6 +15,7 @@ module.exports = [{
     rules: [
       {
         test: /\.js$/,
+        include: [path.resolve(__dirname, './src')],
         use: {
           loader: 'babel-loader',
         },
@@ -26,9 +27,10 @@ module.exports = [{
   context: path.join(__dirname, 'src'),
   entry: './styles/index.less',
   output: {
-    path: __dirname,
+    path: path.join(__dirname, 'dist'),
     filename: 'styles.css',
   },
+  devtool: 'eval',
   module: {
     rules: [
       {
