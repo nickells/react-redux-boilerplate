@@ -4,13 +4,9 @@ import ReactDOM from 'react-dom'
 import { Provider } from 'react-redux'
 import { ConnectedRouter } from 'react-router-redux'
 import { Route } from 'react-router-dom'
-import store, { history } from './Store'
+import store, { history } from './store'
+import Main from './main'
 
-const Nothing = () => (
-  <div>
-    <h1>Hello, world.</h1>
-  </div>
-)
 
 class Root extends React.Component {
   constructor(props){
@@ -23,7 +19,7 @@ class Root extends React.Component {
         <React.Fragment>
           <ConnectedRouter history={history}>
             <React.Fragment>
-              <Route exact path="/" component={Nothing} />
+              <Route exact path="/" component={Main} />
             </React.Fragment>
           </ConnectedRouter>
         </React.Fragment>
@@ -33,6 +29,6 @@ class Root extends React.Component {
 }
 
 ReactDOM.render(
-  <h1>Hello, world!</h1>,
+  <Root />,
   document.getElementById('app'),
 )
